@@ -111,6 +111,7 @@ This is the final data:
 | activity_id        | Factor w/ 6 levels: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING | Activity description          |
 | several names (86) | numeric                                                                                      | Average for each variable for each activity and each subject_id |
 
+For a detailed structure of the final data, you may access this file: https://github.com/FelixDavidMejia/HAR_data_cleaning/blob/master/selected_features.txt.
 
 
 
