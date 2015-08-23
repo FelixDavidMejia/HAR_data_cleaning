@@ -45,7 +45,7 @@ An R script, named [run_analysis.R](https://github.com/FelixDavidMejia/HAR_data_
   * This is the output required in *step 4*.
 1. **Creation of a second, independent tidy data set, summarizing the data.** This is done calculating the average of each variable for each activity and subject.
   * First, the tidy data set obtained in step 4 is expanded with the **_melt() function from reshape2 package_**.
-  * Then data is summarized as required, by activity and subject, and the average for each variable is computed.
+  * Then data is summarized as required, by activity and subject, and the average for each variable is computed. To achieve this, the **_dcast()_** function from the **_reshape2_** package was used.
 1. Finally, the data is written to disk, as required. The resulting file name is **_./HAR_tidy_data.txt_**.
 
 
