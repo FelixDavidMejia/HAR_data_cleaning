@@ -61,8 +61,8 @@ The sensors in the smartphone provides measurement of the following signals:
 
 The suffix '-XYZ' at the end, is used to denote 3-axial signals in the X, Y and Z directions. A set of variables that were estimated from these signals was obtained applying the following functions:
 
-**mean():** Mean value
-**std():** Standard deviation
+`mean():` Mean value
+`std():` Standard deviation
 **mad():** Median absolute deviation 
 **max():** Largest value in array
 **min():** Smallest value in array
