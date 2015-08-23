@@ -93,6 +93,7 @@ The complete list of variables of each feature vector is available in 'features.
 The three files for each dataset are loaded into separate data frames, and then merged into a single data frame for each dataset. Then rows from both datasets are aggregated into an unique data set. The produced dataset has the following structure:
 
 **Tidy Data Set**
+
 | Variable Name      | Type of Data                                                                                 | Description                   |
 | ------------------ | -------------------------------------------------------------------------------------------- | ----------------------------- |
 | subject_id         | integer                                                                                      | ID of the test subject        |
