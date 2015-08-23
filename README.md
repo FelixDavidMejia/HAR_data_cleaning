@@ -27,11 +27,11 @@ As previously explained, data has been randomly partitioned into two different d
 Original data can be accessed from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
 
 ### Activities Performed on Data
-An R script, named[run_analysis.R](https://github.com/FelixDavidMejia/HAR_data_cleaning/blob/master/run_analysis.R) is provided. This script performs the following activities:
+An R script, named [run_analysis.R](https://github.com/FelixDavidMejia/HAR_data_cleaning/blob/master/run_analysis.R) is provided. This script performs the following activities:
 
 1. **Prepares the environment**, loading the required libraries (dplyr & reshape2), at the same time that sets the working directory.
 ..* Variables holding both test & train dataset filenames are created and file existence is verified.
 1. **Loading of files for each dataset**, using the read.table() function.
-..* Appropriate column names are provided for all loaded tables.
-..* This includes a name for each feature of the 561-feature vector on each record. These names come from the features.txt file, which are previously made syntactically valid.
+⋅⋅* Appropriate column names are provided for all loaded tables.
+⋅⋅* This includes a name for each feature of the 561-feature vector on each record. These names come from the features.txt file, which are previously made syntactically valid.
 
