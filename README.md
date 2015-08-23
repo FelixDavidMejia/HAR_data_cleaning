@@ -29,9 +29,12 @@ Original data can be accessed from https://d396qusza40orc.cloudfront.net/getdata
 ### Activities Performed on Data
 An R script, named [run_analysis.R](https://github.com/FelixDavidMejia/HAR_data_cleaning/blob/master/run_analysis.R) is provided. This script performs the following activities:
 
-1. **Prepares the environment**, loading the required libraries (dplyr & reshape2), at the same time that sets the working directory.
+1. **Prepares the environment,** loading the required libraries (dplyr & reshape2), at the same time that sets the working directory.
 ..* Variables holding both test & train dataset filenames are created and file existence is verified.
-1. **Loading of files for each dataset**, using the read.table() function.
-  * Appropriate column names are provided for all loaded tables.
+1. **Loading of files for each dataset,** using the read.table() function. At this time, data from each file is stored in a separate data frame.
+  * Appropriate column names are provided for all data frames.
   * This includes a name for each feature of the 561-feature vector on each record. These names come from the features.txt file, which are previously made syntactically valid.
+1. **Merging of each data set's individual data frames into a single data frame** (for each data set).
+  * This is performed using **_dplyr's inner_join()_** function, joining records by a **_row_id_** variable, previously created.
+1. **Merging of the test and tra
 
