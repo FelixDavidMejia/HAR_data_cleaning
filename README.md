@@ -19,3 +19,9 @@ As previously explained, data has been randomly partitioned into two different d
 * **./train/subject_test.txt :** Each row identifies the subject measured for the sample collected in that window.
 * **./X_train.txt :** Each row contains the 561-feature measure vector for that sample.
 * **./y_train.txt :** Each row contains and indicator of the performed activity during that window.
+
+Original data can be accessed from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
+
+### Activities Performed on Data
+Original data ca
+An R script 
