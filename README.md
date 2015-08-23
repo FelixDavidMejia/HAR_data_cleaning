@@ -11,11 +11,11 @@ In this case, we are dealing with Human Activity Recognition (HAR) data gathered
 As previously explained, data has been randomly partitioned into two different datasets, test and training. Different files were provided for each one of the datasets:
 
 **Test Dataset**
-* ./test/subject_test.txt : Each row identifies the subject measured for the sample collected in that window.
-* ./X_test.txt : Each row contains the 561-feature measure vector for that sample.
-* ./y_test.txt : Each row contains and indicator of the performed activity during that window.
+* **./test/subject_test.txt :** Each row identifies the subject measured for the sample collected in that window.
+* **./X_test.txt :** Each row contains the 561-feature measure vector for that sample.
+* **./y_test.txt :** Each row contains and indicator of the performed activity during that window.
 
 **Training Dataset**
-* ./train/subject_test.txt : Each row identifies the subject measured for the sample collected in that window.
-* ./X_train.txt : Each row contains the 561-feature measure vector for that sample.
-* ./y_train.txt : Each row contains and indicator of the performed activity during that window.
+* **./train/subject_test.txt :** Each row identifies the subject measured for the sample collected in that window.
+* **./X_train.txt :** Each row contains the 561-feature measure vector for that sample.
+* **./y_train.txt :** Each row contains and indicator of the performed activity during that window.
