@@ -39,10 +39,14 @@ An R script, named [run_analysis.R](https://github.com/FelixDavidMejia/HAR_data_
 1. **Merging rows from test and training data frames,** giving origin to a single **merged_data** data frame.
   * This action was performed using **_dplyr's bind_rows()_** function.
 1. **A Tidy Dataset is created**
-  * This is performed with the **_dply's select()_**, excluding non-relevant information.
-  * The *_activity_id* column is encoded as a factor, using the labels provided in file **./activity_labels.txt**.
-  * Another factor variable, *set*, is created, indicating if the record corresponds to the test or training dataset.
+  * This is performed with the **_dplyr's select()_**, excluding non-relevant information.
+  * The *activity_id* column is encoded as a factor, using the labels provided in file **./activity_labels.txt**.
+  * Another factor variable, **_set_**, is created, indicating if the record corresponds to the test or training dataset.
   * This is the output required in *step 4*.
+1. **Creation of a second, independent tidy data set, summarizing the data.** This is done calculating the average of each variable for each activity and subject.
+  * First, the tidy data set obtained in step 4 is expanded with the **_melt() function from reshape2 package_**.
+  * Then data is summarized as required, by activity and subject, and the average for each variable is computed.
+  * Finally, the data is written to disk, as required.
 
 
 
