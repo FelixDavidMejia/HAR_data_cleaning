@@ -35,18 +35,18 @@ An R script, named [run_analysis.R](https://github.com/FelixDavidMejia/HAR_data_
   * Appropriate column names are provided for all data frames.
   * This includes a name for each feature of the 561-feature vector on each record. These names come from the features.txt file, which are previously made syntactically valid.
 1. **Merging of each data set's individual data frames into a single data frame** (for each data set).
-  * This is performed using **_dplyr's inner_join()_** function, joining records by a **_row_id_** variable, previously created. This gives origin to **test_merged** and **train_merged** data frames.
+  * This is performed using **_dplyr's inner_join()_** function, joining records by a **row_id** variable, previously created. This gives origin to **test_merged** and **train_merged** data frames.
 1. **Merging rows from test and training data frames,** giving origin to a single **merged_data** data frame.
-  * This action was performed using **_dplyr's bind_rows()_** function.
+  * This action was performed using **dplyr's bind_rows()** function.
 1. **A Tidy Dataset is created**
-  * This is performed with the **_dplyr's select()_**, excluding non-relevant information.
+  * This is performed with the **dplyr's select()**, excluding non-relevant information.
   * The *activity_id* column is encoded as a factor, using the labels provided in file **./activity_labels.txt**.
-  * Another factor variable, **_set_**, is created, indicating if the record corresponds to the test or training dataset.
-  * This is the output required in *step 4*.
+  * Another factor variable, **set**, is created, indicating if the record corresponds to the test or training dataset.
+  * This is the output required in **step 4**.
 1. **Creation of a second, independent tidy data set, summarizing the data.** This is done calculating the average of each variable for each activity and subject.
-  * First, the tidy data set obtained in step 4 is expanded with the **_melt() function from reshape2 package_**.
-  * Then data is summarized as required, by activity and subject, and the average for each variable is computed. To achieve this, the **_dcast()_** function from the **_reshape2_** package was used.
-1. Finally, the data is written to disk, as required. The resulting file name is **_./HAR_tidy_data.txt_**.
+  * First, the tidy data set obtained in step 4 is expanded with the **melt()** function from **reshape2** package.
+  * Then data is summarized as required, by activity and subject, and the average for each variable is computed. To achieve this, the **dcast()** function from the **reshape2** package was used.
+1. Finally, the data is written to disk, as required. The resulting file name is **./HAR_tidy_data.txt**.
 
 
 
