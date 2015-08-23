@@ -61,9 +61,8 @@ The sensors in the smartphone provides measurement of the following signals:
 
 The suffix '-XYZ' at the end, is used to denote 3-axial signals in the X, Y and Z directions. A set of variables that were estimated from these signals was obtained applying the following functions:
 
-```
-**mean():**** Mean value
-**std():**** Standard deviation
+**mean():** Mean value
+**std():** Standard deviation
 **mad():** Median absolute deviation 
 **max():** Largest value in array
 **min():** Smallest value in array
@@ -79,7 +78,7 @@ The suffix '-XYZ' at the end, is used to denote 3-axial signals in the X, Y and 
 **kurtosis():** kurtosis of the frequency domain signal 
 **bandsEnergy():** Energy of a frequency interval within the 64 bins of the FFT of each window.
 **angle():** Angle between to vectors.
-```
+
 
 
 The purpose of this project is to demonstrate our ability to collect, work with, and clean a data set. The goal is to prepare a tidy data set that can be used for later analysis.
