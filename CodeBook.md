@@ -37,7 +37,7 @@ Data corresponding to the name of the different activities performed by the subj
 ###Features
 This is the data contained in the **./test/X_test.txt** and **./train/X_train.txt** files. For each record there are 561 different measurements or features.
 
-In general, those features are the measurement of the following signals:
+The sensors in the smartphone provides measurement of the following signals:
 
 | Signals            |
 | ------------------ |
@@ -59,7 +59,27 @@ In general, those features are the measurement of the following signals:
 | fBodyGyroMag       |
 | fBodyGyroJerkMag   |
 
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+The suffix '-XYZ' at the end, is used to denote 3-axial signals in the X, Y and Z directions. A set of variables that were estimated from these signals was obtained applying the following functions:
+
+```
+mean(): Mean value
+std(): Standard deviation
+mad(): Median absolute deviation 
+max(): Largest value in array
+min(): Smallest value in array
+sma(): Signal magnitude area
+energy(): Energy measure. Sum of the squares divided by the number of values. 
+iqr(): Interquartile range 
+entropy(): Signal entropy
+arCoeff(): Autorregresion coefficients with Burg order equal to 4
+correlation(): correlation coefficient between two signals
+maxInds(): index of the frequency component with largest magnitude
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+skewness(): skewness of the frequency domain signal 
+kurtosis(): kurtosis of the frequency domain signal 
+bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+angle(): Angle between to vectors.
+```
 
 
 The purpose of this project is to demonstrate our ability to collect, work with, and clean a data set. The goal is to prepare a tidy data set that can be used for later analysis.
