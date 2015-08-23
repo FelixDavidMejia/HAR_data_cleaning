@@ -92,9 +92,13 @@ The complete list of variables of each feature vector is available in 'features.
 ### Processing
 The three files for each dataset are loaded into separate data frames, and then merged into a single data frame for each dataset. Then rows from both datasets are aggregated into an unique data set. The produced dataset has the following structure:
 
+**Tidy Data Set**
 | Variable Name      | Type of Data                                                                                 | Description                   |
 | ------------------ | -------------------------------------------------------------------------------------------- | ----------------------------- |
 | subject_id         | integer                                                                                      | ID of the test subject        |
 | activity_id        | Factor w/ 6 levels: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING | Activity description          |
 | set                | Factor w/ 2 levels: TEST,TRAINING                                                            | Source Dataset (Test/Training |
 | several names (86) | numeric                                                                                      | Only the mean and standard deviation measurements (86 out of 561) |
+
+Finally this already tidy data was melt (expanded) into long format, using **subject_id** and **activity_id** as id variables. This melt data frame was then recast into a summarized form, with the average of each variable for each **activity_id** and each **subject_id**.
+
